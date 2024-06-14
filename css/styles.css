@@ -3,7 +3,108 @@
     padding: 0;
 }
 
-h1 {
-    color: #AD1EA1;
-    font-family: 'Inter';
+body {
+    background: #000;
+  }
+  
+.neon {
+    font-family: 'Monoton', cursive;
+    font-size: 75px;
+    color: #FF48FF;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: -15%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;   
+    letter-spacing: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.flicker-slow{
+    animation: flicker 3s linear infinite;
+}
+  
+.flicker-fast{
+    animation: flicker 1s linear infinite;
+}
+  
+@keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+          
+      }
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+          opacity: 0.4;
+      }
+}
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.first_page {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.one h2 {
+    margin-top: 0px;
+    text-align: center;
+    color: #ff48ff;
+    margin-bottom: 70px;
+}
+
+.one h1 {
+    color: #ff48ff;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 5px #ff48ff;
+    background-color: #0e1111;
+    transition: 0.4s;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 20px;
+}
+
+
+.one .button_1 {
+    color: #0e1111;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: solid 5px #ff48ff;
+    background-color: #ff48ff;
+    transition: 0.4s;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 60px;
+}
+
+#bottom_button {
+    margin-bottom: 100px;
 }
