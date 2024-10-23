@@ -72,7 +72,7 @@ section {
 .one h2 {
     margin-top: 0px;
     text-align: center;
-    color: #ff48ff;
+    color: #ff48ff; 
     margin-bottom: 70px;
 }
 
@@ -105,6 +105,19 @@ section {
     margin-bottom: 60px;
 }
 
-#bottom_button {
-    margin-bottom: 100px;
+.footer_index {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #ff48ff;
+}
+
+a {
+    color: #ff48ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.a_frst_line {
+    padding: 15px;
+    border-radius: 10px;
+    color: #ff48ff;
 }
